@@ -1,0 +1,7 @@
+pygressbar.py
+setup.cfg
+setup.py
+pygressbar.egg-info/PKG-INFO
+pygressbar.egg-info/SOURCES.txt
+pygressbar.egg-info/dependency_links.txt
+pygressbar.egg-info/top_level.txt

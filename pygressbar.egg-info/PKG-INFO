@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pygressbar
+Version: 0.1.0
+Summary: Terminal progress bar for Python
+Home-page: https://github.com/andrewkshim/pygressbar
+Author: Andrew Shim
+Author-email: andrewkshim92@gmail.com
+License: MIT
+Download-URL: https://github.com/andrewkshim/pygressbar/tarball/1.0
+Description: UNKNOWN
+Keywords: terminal
+Platform: UNKNOWN
