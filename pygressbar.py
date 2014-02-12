@@ -20,7 +20,7 @@ class ProgressBar(object):
 
   The progress bar itself has no knowledge of the measured
   computation other than a specified 'limit'; it is up to
-  external methods to update the progress bar when they see 
+  external methods to update the progress bar when they see
   fit.
 
   """
@@ -36,7 +36,7 @@ class ProgressBar(object):
       have completed.
 
     * self.percentage
-      Float that denotes self.count / self.limit 
+      Float that denotes self.count / self.limit
 
     * self.bar
       String that represents the actual bar to be printed out.
@@ -47,13 +47,13 @@ class ProgressBar(object):
     self.percentage = 0.0
     self.bar = ""
 
-  def __calculatePercentageComplete(self):
+  def _calculatePercentageComplete(self):
     """
     Simple percentage calculation.
     """
     self.percentage = (self.count + 0.0) / self.limit
 
-  def __formatProgressBar(self):
+  def _formatProgressBar(self):
     """
     Build the output string that represents a single frame
     of the progress bar.
@@ -66,19 +66,19 @@ class ProgressBar(object):
         SPACE_CHARACTER * numberOfRemainingTicks
     )
 
-  def __tick(self):
+  def _tick(self):
     """
     Update progress bar parameters.
     """
     self.count += 1
-    self.__calculatePercentageComplete()
-    self.__formatProgressBar()
+    self._calculatePercentageComplete()
+    self._formatProgressBar()
 
   def render(self):
     """
     Update progress bar and print to STDOUT.
     """
-    self.__tick()
+    self._tick()
     sys.stdout.write(self.bar)
     if self.count == self.limit:
       sys.stdout.write('\n')
