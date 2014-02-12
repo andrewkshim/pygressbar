@@ -16,7 +16,7 @@ progress_bar = pygressbar.ProgressBar(limit)
 for i in range(0, limit):
   progress_bar.render()
 ```
-To see this in action, execute [pygressbar_sample.py][./pygressbar_sample.py].
+To see this in action, execute [pygressbar\_sample.py](./pygressbar_sample.py).
 
 # License
 This content is released under the [MIT License](./LICENSE.md).
